@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('Nivel', function (Blueprint $table){
+        Schema::create('satclientes', function (Blueprint $table){
             $table->id('CLI_ID');
             $table->integer('CLI_CI_RIF');
             $table->string('CLI_RAZON');
@@ -35,6 +35,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('CLIENTES_SAT');
+        Schema::dropIfExists('satclientes');
     }
 };
