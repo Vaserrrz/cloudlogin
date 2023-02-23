@@ -3,7 +3,7 @@
 <a href="login">Login</a>
 <a href="login/register">Register</a>
 @else
-<a href="Dashboard">Dashboard</a>
+<a href="Dashboard">dashboard</a>
 <a href="">Logout</a>
 @endguest
 
