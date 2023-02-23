@@ -41,4 +41,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function Adminlte_desc(){
+        return "Administrador";
+    }
+
+    public function adminlte_profile_url(){
+        return "profile/username";
+    }
 }
