@@ -292,14 +292,16 @@ return [
     'menu' => [
         // Navbar items:
         [
-            'type'         => 'navbar-search',
-            'text'         => 'search',
+            'text' => 'Link 1',
+            'url' => '#',
             'topnav_right' => true,
         ],
         [
-            'text' => 'Link 1',
-            'url' => '#',
-            'TOPNAV' => true,
+            'type'         => 'navbar-search',
+            'text'         => 'Busqueda',
+            'topnav' => true,
+            'url' => '',
+            'method' => 'post'
         ],
         [
             'type'         => 'fullscreen-widget',
@@ -317,29 +319,75 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text' => 'Dashboard',
-            'url'  => 'admin',
+
         ],
         [
-            'text'        => 'pages',
+            'text' => 'Dashboard',
+            'url'  => '#',
+            'icon' => 'fas fa-fw fa-home',
+            'label' => 'Nuevo',
+            'label_color' => 'danger',
+            'icon_color' => 'red'
+        ],
+        [
+            'text' => 'Multilevel',
+            'submenu' => [
+                [
+                    'text' => 'Nivel 1',
+                    'url' => 'admin'
+                ],
+                [
+                    'text' => 'Nivel 1',
+                    'submenu' => [
+                        [
+                            'text' => 'Nivel 2',
+                            'url' => '#'
+                        ],
+                    ]
+                ],
+            ]
+        ],
+        [
+            'text'        => 'Paginas',
             'url'         => 'admin/pages',
             'icon'        => 'far fa-fw fa-file',
             'label'       => 4,
             'label_color' => 'success',
         ],
-        ['header' => 'account_settings'],
+        ['header' => 'MANTENIMIENTO'],
         [
-            'text' => 'profile',
+            'text' => 'Clientes',
+            'url'  => '#',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text' => 'Proveedores',
+            'url'  => '#',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text' => 'Remota',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
-            'text' => 'change_password',
+            'text' => 'Mikrotik_Sat',
+            'url'  => 'admin/settings',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        ['header' => 'CONFIGURACIONES'],
+        [
+            'text' => 'Perfil',
+            'url'  => 'admin/settings',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text' => 'Cambiar contraseña',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text'    => 'multilevel',
+            'text'    => 'Ajustes Avanzados',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [
