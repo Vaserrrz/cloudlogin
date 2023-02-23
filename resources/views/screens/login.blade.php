@@ -7,6 +7,7 @@
     <title>Login</title>
 </head>
 <body>
+    @include('partial.nav')
     <h1>Inicio de Sesion</h1>
     <form action="" method="POST">
         @csrf

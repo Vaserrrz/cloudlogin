@@ -7,6 +7,7 @@
     <title>Dashboard</title>
 </head>
 <body>
+    @include('partial.nav')
     <h1>Dashboard</h1>
 </body>
 </html>

@@ -13,11 +13,15 @@ class LoginController extends Controller
     }
     public function log(){
         $credentials = request()->only('email','password');
-        if  (Auth::attempt($credentials)) {
+
+        if (auth::attempt($credentials)){
+            request()->session()->regenerate();
+
             return redirect('dashboard');
+        }
+        return redirect('login');
        }
-       return redirect('login');
-    }
+
 
     public function register(){
         return view('screens.register');

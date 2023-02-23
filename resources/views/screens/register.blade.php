@@ -7,6 +7,7 @@
     <title>Registration</title>
 </head>
 <body>
+    @include('partial.nav')
     <h1>Registro de Usuario</h1>
     <form action="{{route('login.store')}}" method="POST">
         @csrf
