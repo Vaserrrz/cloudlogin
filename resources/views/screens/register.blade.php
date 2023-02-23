@@ -17,6 +17,12 @@
             <input name="email" type="Email" placeholder="Email..">
         </label><br>
         </label>
+            <input name="phone number" type="phone" placeholder="Phone Number..">
+        </label><br>
+        </label>
+            <input name="description" type="description" placeholder="Description..">
+        </label><br>
+        </label>
             <input name="password" type="Password" placeholder="Password..">
         </label><br>
         <br>

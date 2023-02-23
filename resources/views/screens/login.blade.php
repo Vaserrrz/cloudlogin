@@ -8,6 +8,15 @@
 </head>
 <body>
     <h1>Inicio de Sesion</h1>
-
+    <form action="" method="POST">
+        @csrf
+        <label>
+            <input name="email" type="email" placeholder="Email..">
+        </label><br>
+        </label>
+            <input name="password" type="Password" placeholder="Password..">
+        </label><br>
+        <br>
+        <button type="submit">Login</button>
 </body>
 </html>
