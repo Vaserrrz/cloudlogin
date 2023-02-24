@@ -323,7 +323,7 @@ return [
         ],
         [
             'text' => 'Dashboard',
-            'url'  => '#',
+            'url'  => 'admin',
             'icon' => 'fas fa-fw fa-home',
             'label' => 'Nuevo',
             'label_color' => 'danger',
@@ -334,7 +334,7 @@ return [
             'submenu' => [
                 [
                     'text' => 'Nivel 1',
-                    'url' => 'admin'
+                    'url' => '#'
                 ],
                 [
                     'text' => 'Nivel 1',
@@ -358,22 +358,22 @@ return [
         [
             'text' => 'Clientes',
             'url'  => '#',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-address-book',
         ],
         [
             'text' => 'Proveedores',
             'url'  => '#',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-users',
         ],
         [
             'text' => 'Remota',
             'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-rss',
         ],
         [
             'text' => 'Mikrotik_Sat',
             'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-server',
         ],
         ['header' => 'CONFIGURACIONES'],
         [

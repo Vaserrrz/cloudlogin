@@ -12,3 +12,7 @@ Route::get('login/register', [LoginController::class, 'register'])->name('login.
 Route::post('login/register', [LoginController::class, 'store'])->name('login.store');
 Route::get('dashboard', [LoginController::class, 'show'])->name('login.dashboard')->middleware('auth');
 Route::get('login/logout', [LoginController::class, 'exituser'])->name('login.exit');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
